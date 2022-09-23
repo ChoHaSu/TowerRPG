@@ -61,5 +61,7 @@ public class CharacterControlable : Controlable
     {
         animator = charBody.GetComponent<Animator>();
         rigidbody = GetComponent<Rigidbody>();
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }
